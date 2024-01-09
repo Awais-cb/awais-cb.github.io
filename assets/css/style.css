@@ -1188,3 +1188,11 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.personal-image {
+  border-radius: 10px;
+}
+
+.radial-element {
+  border-radius: 5px;
+}
