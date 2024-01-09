@@ -1196,3 +1196,17 @@ section .container {
 .radial-element {
   border-radius: 5px;
 }
+
+.tech-stk {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+  padding: 20px 0px 0px 0px;
+}
+.tech-stk img{
+  height: 50px;
+  width: 50px;
+}
