@@ -765,20 +765,12 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
-}
-
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #18d26e;
+  background: #31313185;
+  border-color: #31313185;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #fff;
 }
 
 .services .icon-box:hover h4 a,
