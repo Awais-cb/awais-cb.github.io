@@ -9,8 +9,24 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/Poppins-Regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/assets/fonts/Poppins-SemiBold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #040404;
   color: #fff;
   position: relative;
@@ -51,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +92,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 
@@ -376,7 +392,7 @@ section .container {
 
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   line-height: 1px;
   margin: 0 0 20px 0;
@@ -399,7 +415,7 @@ section .container {
   margin: 0;
   margin: -15px 0 15px 0;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -409,7 +425,7 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .about-me .content h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 26px;
   color: #18d26e;
 }
@@ -478,7 +494,7 @@ section .container {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
 
@@ -536,7 +552,7 @@ section .container {
 }
 
 .interests .icon-box h3 {
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -634,7 +650,7 @@ section .container {
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
@@ -733,7 +749,7 @@ section .container {
 }
 
 .services .icon-box h4 {
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 15px;
   font-size: 24px;
 }
@@ -949,7 +965,7 @@ section .container {
 
 .portfolio-details .portfolio-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -1022,7 +1038,7 @@ section .container {
 .contact .info-box h3 {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
-  font-weight: 700;
+  font-weight: 600;
   margin: 10px 0 8px 68px;
 }
 
