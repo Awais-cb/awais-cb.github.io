@@ -23,6 +23,12 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
   <style>
+    :root {
+      --primary: #1e90ff;
+      --primary-hover: #369cff;
+      --white: #ffffff;
+    }
+
     @font-face {
       font-family: 'Poppins';
       font-style: normal;
@@ -66,12 +72,12 @@
     }
 
     a {
-      color: #18d26e;
+      color: var(--primary);
       text-decoration: none;
     }
 
     a:hover {
-      color: #35e888;
+      color: var(--primary-hover);
       text-decoration: none;
     }
 
@@ -125,7 +131,7 @@
 
     #header h2 span {
       color: #fff;
-      border-bottom: 2px solid #18d26e;
+      border-bottom: 2px solid var(--primary);
     }
 
     #header img {
@@ -153,7 +159,7 @@
     }
 
     #header .social-links a:hover {
-      background: #18d26e;
+      background: var(--primary);
     }
 
     @media (max-width: 992px) {
@@ -276,7 +282,7 @@
       height: 2px;
       bottom: -4px;
       left: 0;
-      background-color: #18d26e;
+      background-color: var(--primary);
       visibility: hidden;
       width: 0px;
       transition: all 0.3s ease-in-out 0s;
@@ -420,7 +426,7 @@
       width: 120px;
       height: 1px;
       display: inline-block;
-      background: #4ceb95;
+      background: var(--primary);
       margin: 4px 10px;
     }
 
@@ -440,7 +446,7 @@
     .about-me .content h3 {
       font-weight: 600;
       font-size: 26px;
-      color: #18d26e;
+      color: var(--primary);
     }
 
     .about-me .content ul {
@@ -461,7 +467,7 @@
     .about-me .content ul i {
       font-size: 16px;
       margin-right: 5px;
-      color: #18d26e;
+      color: var(--primary);
       line-height: 0;
     }
 
@@ -492,7 +498,7 @@
       font-size: 24px;
       background: rgba(255, 255, 255, 0.1);
       padding: 12px;
-      color: #18d26e;
+      color: var(--primary);
       border-radius: 50px;
       line-height: 0;
     }
@@ -544,7 +550,7 @@
       width: 1px;
       height: 10px;
       transition: 0.9s;
-      background-color: #18d26e;
+      background-color: var(--primary);
     }
 
     /*--------------------------------------------------------------
@@ -655,7 +661,7 @@
     }
 
     .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-      background-color: #18d26e;
+      background-color: var(--primary);
     }
 
     /*--------------------------------------------------------------
@@ -682,7 +688,7 @@
       font-weight: 600;
       text-transform: uppercase;
       font-family: "Poppins", sans-serif;
-      color: #18d26e;
+      color: var(--primary);
       margin-bottom: 10px;
     }
 
@@ -715,8 +721,8 @@
       border-radius: 50px;
       left: -9px;
       top: 0;
-      background: #18d26e;
-      border: 2px solid #18d26e;
+      background: var(--primary);
+      border: 2px solid var(--primary);
     }
 
     /*--------------------------------------------------------------
@@ -733,7 +739,7 @@
       margin: 0 auto;
       width: 64px;
       height: 64px;
-      background: #18d26e;
+      background: var(--primary);
       border-radius: 5px;
       transition: all 0.3s ease-out 0s;
       display: flex;
@@ -824,7 +830,7 @@
 
     .portfolio #portfolio-flters li:hover,
     .portfolio #portfolio-flters li.filter-active {
-      background: #18d26e;
+      background: var(--primary);
     }
 
     .portfolio #portfolio-flters li:last-child {
@@ -924,7 +930,7 @@
     }
 
     .portfolio .portfolio-wrap .portfolio-links a:hover {
-      color: #63eda3;
+      color: var(--primary-hover);
     }
 
     .portfolio .portfolio-wrap:hover::before {
@@ -1018,7 +1024,7 @@
     }
 
     .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-      background-color: #18d26e;
+      background-color: var(--primary);
     }
 
     /*--------------------------------------------------------------
@@ -1033,7 +1039,7 @@
 
     .contact .info-box i.bx {
       font-size: 24px;
-      color: #18d26e;
+      color: var(--primary);
       border-radius: 50%;
       padding: 14px;
       float: left;
@@ -1070,102 +1076,7 @@
     }
 
     .contact .info-box .social-links a:hover {
-      color: #18d26e;
-    }
-
-    .contact .php-email-form {
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    .contact .php-email-form .error-message {
-      display: none;
-      background: rgba(255, 255, 255, 0.08);
-      background: #ed3c0d;
-      text-align: left;
-      padding: 15px;
-      font-weight: 600;
-    }
-
-    .contact .php-email-form .error-message br+br {
-      margin-top: 25px;
-    }
-
-    .contact .php-email-form .sent-message {
-      display: none;
-      background: rgba(255, 255, 255, 0.08);
-      background: #18d26e;
-      text-align: center;
-      padding: 15px;
-      font-weight: 600;
-    }
-
-    .contact .php-email-form .loading {
-      display: none;
-      background: rgba(255, 255, 255, 0.08);
-      text-align: center;
-      padding: 15px;
-    }
-
-    .contact .php-email-form .loading:before {
-      content: "";
-      display: inline-block;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      margin: 0 10px -6px 0;
-      border: 3px solid #18d26e;
-      border-top-color: #eee;
-      animation: animate-loading 1s linear infinite;
-    }
-
-    .contact .php-email-form input,
-    .contact .php-email-form textarea {
-      border-radius: 0;
-      box-shadow: none;
-      font-size: 14px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 0;
-      transition: 0.3s;
-      color: #fff;
-    }
-
-    .contact .php-email-form input:focus,
-    .contact .php-email-form textarea:focus {
-      background-color: rgba(255, 255, 255, 0.11);
-    }
-
-    .contact .php-email-form input::-moz-placeholder,
-    .contact .php-email-form textarea::-moz-placeholder {
-      color: rgba(255, 255, 255, 0.3);
-      opacity: 1;
-    }
-
-    .contact .php-email-form input::placeholder,
-    .contact .php-email-form textarea::placeholder {
-      color: rgba(255, 255, 255, 0.3);
-      opacity: 1;
-    }
-
-    .contact .php-email-form input {
-      padding: 10px 15px;
-    }
-
-    .contact .php-email-form textarea {
-      padding: 12px 15px;
-    }
-
-    .contact .php-email-form button[type=submit] {
-      background: #18d26e;
-      border: 0;
-      padding: 10px 30px;
-      color: #fff;
-      transition: 0.4s;
-      border-radius: 4px;
-    }
-
-    .contact .php-email-form button[type=submit]:hover {
-      background: #15bb62;
+      color: var(--primary);
     }
 
     @keyframes animate-loading {
@@ -1202,7 +1113,7 @@
     }
 
     .credits a {
-      color: #18d26e;
+      color: var(--primary);
       transition: 0.3s;
     }
 
@@ -1229,7 +1140,8 @@
       row-gap: 50px;
       padding: 20px 0px 0px 0px;
     }
-    .tech-stk img{
+
+    .tech-stk img {
       height: 50px;
       width: 50px;
     }
@@ -1763,7 +1675,7 @@
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
           <div class="icon-box radial-element">
-            <div class="icon"><i class="bx bx-link"></i></div>
+            <div class="icon"><i class="bx bx-detail"></i></div>
             <h4>API Development and Integration</h4>
             <p>Building robust APIs and integrating third-party services to enhance functionality. I ensure smooth
               communication between different software components for a cohesive user experience</p>
@@ -1790,33 +1702,21 @@
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>My Works</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
-        </div>
+        <p>My Work</p>
       </div>
 
       <div class="row portfolio-container">
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/od1_compressed.webp" class="img-fluid" alt="oladoc.com" loading="lazy">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>oladoc.com</h4>
+              <p>Mediconnect services</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/od1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="oladoc.com - Mediconnect Services"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio1.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1824,15 +1724,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/pcc1_compressed.webp" class="img-fluid" alt="PhoneCheck Cloud" loading="lazy">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>PhoneCheck Cloud</h4>
+              <p>Upgenics International</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/pcc1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="PhoneCheck Cloud - Upgenics International"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1840,15 +1740,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/cb1_compressed.webp" class="img-fluid" alt="Clipbucket" loading="lazy">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
+              <h4>Clipbucket</h4>
+              <p>Open Source</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/cb1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Clipbucket - Integrated Units"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio3.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1856,15 +1756,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/vl1_compressed.webp" class="img-fluid" alt="Vodlix" loading="lazy">
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
+              <h4>Vodlix</h4>
+              <p>Integrated Units</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/vl1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Vodlix - Integrated Units"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1872,15 +1772,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/cb3_compressed.webp" class="img-fluid" alt="Clipbucket Premium" loading="lazy">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
+              <h4>Clipbucket Premium</h4>
+              <p>Integrated Units</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/cb3_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Clipbucket Premium - Integrated Units"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio5.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1888,15 +1788,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/tn1_compressed.webp" class="img-fluid" alt="tune.pk" loading="lazy">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>Tune.pk</h4>
+              <p>Integrated Units</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/tn1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Tune.pk - Integrated Units"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio6.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1904,15 +1804,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/lns1_compressed.webp" class="img-fluid" alt="Lightning Network Stores" loading="lazy">
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
+              <h4>Lightning Network Stores/</h4>
+              <p>Pedro FR</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/lns1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Lightning Network Stores - Pedro FR"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio7.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1920,15 +1820,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/yds1_compressed.webp" class="img-fluid" alt="Your Dream School" loading="lazy">
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
+              <h4>Your Dream School</h4>
+              <p>Adam reims</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/yds1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Your Dream School - Adam reims"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio8.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1936,15 +1836,15 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/tic1_compressed.webp" class="img-fluid" alt="Tech Interview Coaching" loading="lazy">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>Tech Interview Coaching</h4>
+              <p>Handeo</p>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/tic1_compressed.webp" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Tech Interview Coaching - Handeo"><i class="bx bx-zoom-in"></i></a>
+                <a href="portfolio9.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-detail"></i></a>
               </div>
             </div>
           </div>
@@ -1964,7 +1864,9 @@
         <p>Contact Me</p>
       </div>
       <div class="php-email-form mt-4 mb-4">
-        <h1 class="text-center">Connect With Me To Empower Change Through Code.</h1>
+        <h1 class="text-center">
+          Crafting Digital Excellence for Your Business Future.
+        </h1>
       </div>
       <div class="row mt-2">
 
@@ -2011,11 +1913,8 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
