@@ -1118,3 +1118,35 @@ section .container {
   height: 50px;
   width: 50px;
 }
+
+
+.swiper-slide {
+  max-height: 600px;
+}
+
+.portfolio-slider-imgs {
+  max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-slider-img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .portfolio-slider-img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .swiper-slide {
+    max-height: 200px;
+  }
+
+  .portfolio-slider-img {
+    max-width: 100%;
+  }
+}
