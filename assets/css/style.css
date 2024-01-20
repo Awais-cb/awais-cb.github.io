@@ -4,8 +4,8 @@
   --light-content: #A7A7A7;
   --solid-heading-dark-mode: #CCC;
   --popins: 'Poppins', sans-serif;
-  --gradient-color1: #ff4d4d;
-  --gradient-color2: #f9cb28;
+  --gradient-color1: #13547a;
+  --gradient-color2: #80d0c7;
 }
 body {
   font-family: var(--popins);
@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--dm-sans);
+  font-family: var(--popins);
 }
 
 /*--------------------------------------------------------------
@@ -305,7 +305,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: var(--dm-sans);
+    font-family: var(--popins);
     color: var(--light-content);
     font-size: 20px;
     position: fixed;
@@ -504,7 +504,7 @@ section .container {
   text-align: center;
   background: rgb(54 54 54 / 62%);
   border-radius: 2px 16px 2px 16px;
-  font-family: var(--dm-sans);
+  font-family: var(--popins);
 }
 
 .counts .count-box i {
@@ -817,7 +817,7 @@ section .container {
     right: 23px;
     z-index: -1;
     color: var(--solid-heading-dark-mode);
-    font-family: var(--dm-sans);
+    font-family: var(--popins);
     transition: 0.2s ease-in-out;
 }
 .services .icon-box:hover .service-order{
@@ -1157,7 +1157,7 @@ section .container {
   padding: 100px 0px;
   font-size: 20px;
   font-weight: 600;
-  font-family: var(--dm-sans);
+  font-family: var(--popins);
 }
 .my-mail{
   text-decoration: none;
